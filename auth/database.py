@@ -1,0 +1,10 @@
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker, declarative_base
+
+DATA_BASE_URL = "sqlite:///.users_database.db"
+
+engine = create_engine(DATA_BASE_URL)
+
+SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+
+Base = declarative_base()
