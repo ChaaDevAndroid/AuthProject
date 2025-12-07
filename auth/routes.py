@@ -5,7 +5,7 @@ from .dependencies import get_db, authenticate_user, get_user
 from .models import Token
 from .schemas import UserCreate, UserResponse
 from users.models import User
-from .utils import get_password_hash, create_access_token  # Import get_password_hash here
+from .utils import get_password_hash, create_access_token
 
 router = APIRouter()
 

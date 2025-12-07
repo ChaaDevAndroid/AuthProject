@@ -3,7 +3,6 @@ from fastapi.security import OAuth2PasswordBearer
 from jose import jwt, JWTError
 from sqlalchemy.orm import Session
 from starlette import status
-
 from users.models import User
 from .database import Base, engine, SessionLocal
 from .models import TokenData
